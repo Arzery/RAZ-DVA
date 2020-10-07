@@ -1,3 +1,17 @@
+/*----- Luntik-Bold -----*/
+
+@font-face {
+  font-family: 'Luntik-Bold';
+  src: url('../fonts/Luntik-Bold.eot'); /* IE9 Compat Modes */ 
+  src: url('../fonts/Luntik-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Luntik-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Luntik-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Luntik-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Luntik-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+font-weight: 900;
+}
+
+
 /* ------ Спецификация ------ */
 
 body {
@@ -151,17 +165,15 @@ input:active , input:focus , button:active , button:focus {
 }
 
 .offer {
-	font-family: 'Caveat', cursive;
-	margin: 0 auto;
-	border-radius: 50%;
-	padding: 100px 50px;
-	max-width: 430px;
-	max-height: 430px;
-	background: #fff;
-	transition: 1s all;
-	box-shadow: 0 0 10px #fff,
-				0 0 30px #fff,
-				0 0 50px #fff;	
+    font-family: 'Luntik-Bold';
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 100px 57px;
+    max-width: 430px;
+    max-height: 430px;
+    background: #fff;
+    transition: 1s all;
+    box-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 50px #fff;
 }
 
 .offer:hover {
