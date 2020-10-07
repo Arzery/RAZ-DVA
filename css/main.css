@@ -106,10 +106,28 @@ input:active , input:focus , button:active , button:focus {
 	box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 
+/*--- SNOW ---*/
+
+#snow {
+	width: 100%; height: 100%; 
+	background-image: url("../img/snow1.png"), url("../img/snow2.png"), url("../img/snow3.png"); 
+	-webkit-animation: snow 20s linear infinite;
+	-moz-animation: snow 20s linear infinite;
+	-ms-animation: snow 20s linear infinite;
+	animation: snow 20s linear infinite;}
+	@keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+	@-moz-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+	@-webkit-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+	@-ms-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+
+.header #snow {
+	padding-bottom: 318px;
+}
+
 /*--- HEADER ---*/
 
 .header {
-	padding: 0 0 318px;
+	position: relative;
 	background: url(../img/2.jpg) no-repeat center center/cover;
 }
 
@@ -133,9 +151,10 @@ input:active , input:focus , button:active , button:focus {
 }
 
 .offer {
+	font-family: 'Caveat', cursive;
 	margin: 0 auto;
 	border-radius: 50%;
-	padding: 100px 0;
+	padding: 100px 50px;
 	max-width: 430px;
 	max-height: 430px;
 	background: #fff;
@@ -358,9 +377,27 @@ input:active , input:focus , button:active , button:focus {
 	border-radius: 50px;
 	font-size: 15px;
 	font-weight: 700;
+	cursor: pointer;
 	width: 100%;
 	height: 47px;
 	background: #64aff3;	
+}
+
+.form__button:hover {
+	box-shadow: 0 0px 3px #AFEEEE,
+				0 0px 13px #0df,
+				0 0px 20px #AFEEEE;
+}
+
+
+
+
+.form__button:active {
+	box-shadow: 0 0px 3px #AFEEEE,
+				0 0px 23px #AFEEEE,
+				0 0px 43px #AFEEEE,
+				0 0px 46px #AFEEEE;
+
 }
 
 
@@ -382,6 +419,8 @@ input:active , input:focus , button:active , button:focus {
     right: 22%;
     bottom: 0%;
 }
+
+
 
 /* Media Queries */
 
@@ -522,7 +561,7 @@ input:active , input:focus , button:active , button:focus {
 		font-size: 10px;
 	}
 
-	.header {
+	.header #snow{
 		padding-bottom: 80px;
 	}
 
