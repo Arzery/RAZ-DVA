@@ -461,6 +461,11 @@ input:active , input:focus , button:active , button:focus {
 	    width: 920px;
 	}
 
+	.map {
+		max-width: 100%;
+		width: 75%;
+	}
+
 
 
 }
@@ -470,16 +475,16 @@ input:active , input:focus , button:active , button:focus {
 	    width: 720px;
 	 }
 
+	 .company-info{
+		flex-direction: column;
+	}
+
 	.contact-card {
 		max-height: 100%;
 	}
 
 	.map {
 		width: 100%;
-	}
-
-	.company-info{
-		flex-direction: column;
 	}
 
 	.contaсt-card-content {
@@ -499,13 +504,14 @@ input:active , input:focus , button:active , button:focus {
 	}
 
 	.shop .container {
-	  flex-direction: column;
+	  
 	}
 
 	.nav {
-		display: flex;
-		width: 100%;
-		justify-content: space-around;
+	}
+
+	.shop-sleigh {
+		width: 70%;
 	}
 
 	.shop-img {
