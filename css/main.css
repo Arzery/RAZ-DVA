@@ -205,6 +205,7 @@ input:active , input:focus , button:active , button:focus {
     padding: 100px 57px;
     max-width: 430px;
     max-height: 430px;
+    display: block;
     background: #fff;
     transition: 1s all;
     box-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 50px #fff;
@@ -515,8 +516,6 @@ input:active , input:focus , button:active , button:focus {
 		width: 75%;
 	}
 
-
-
 }
 
 @media (max-width: 991.98px) {
@@ -528,9 +527,11 @@ input:active , input:focus , button:active , button:focus {
 		flex-direction: column;
 	}
 
-	.contact-card {
-		max-height: 100%;
+	.contaсt-card {
+		height: 100%;
 	}
+    
+
 
 	.map {
 		width: 100%;
