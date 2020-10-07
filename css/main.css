@@ -1,0 +1,563 @@
+/* ------ Спецификация ------ */
+
+body {
+	font: 400 16px 'Roboto', sans-serif;
+	color: #000;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.04em;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+div, p, form, input,li , a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    line-height: 1.4em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: 900;
+	line-height: 1.20em;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+a, button, input {
+	border: none;
+	transition: all 0.5s ease;
+}
+
+input:active , input:focus , button:active , button:focus { 
+	outline: none; 
+	cursor: pointer;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.justify-content-around {
+	justify-content: space-around;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.btn:hover {
+	box-shadow: 0 1px 10px rgba(0,0,0,0.8);
+}
+
+.btn:active {
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+/*--- HEADER ---*/
+
+.header {
+	padding: 0 0 318px;
+	background: url(../img/2.jpg) no-repeat center center/cover;
+}
+
+.phone {
+	display: block;
+}
+
+.header-info {
+	color: #fff;
+	text-align: right;
+}
+
+.header-info a:hover {
+	color: #f5a641;
+}
+
+.logo {
+	width: 150px;
+	transform: rotate(-30deg);
+	transition: 1s all;
+}
+
+.offer {
+	margin: 0 auto;
+	border-radius: 50%;
+	padding: 100px 0;
+	max-width: 430px;
+	max-height: 430px;
+	background: #fff;
+	transition: 1s all;
+	box-shadow: 0 0 10px #fff,
+				0 0 30px #fff,
+				0 0 50px #fff;	
+}
+
+.offer:hover {
+	box-shadow: 0 0 10px #fff,
+				0 0 30px #fff,
+				0 0 50px #fff,
+				0 0 70px #fff,
+				0 0 90px #fff,
+				0 0 110px #fff;
+	font-size: 50px;
+}	
+
+.offer:hover .logo {
+	transform: rotate(-50deg);
+}
+
+.offer-title {
+	font-size: 35px;
+	letter-spacing: 0.14em;
+	color: #f5a641;
+}
+
+.offer span {
+	color: #64aff3;
+}
+
+.nav {
+	color: #fff;
+	width: 100px;
+}
+
+.nav__item {
+	transition: 0.5s ease;
+	font-weight: 900;
+	font-size: 17px;
+	padding: 10px 0;
+}
+
+.nav__item:hover {
+	color: #f5a641;	
+}
+
+.shop {
+	background: #9dcdef;
+	padding: 40px 0;
+	position: relative;
+}
+
+.shop .container {
+	display: flex;
+}
+
+.shop-sleigh {
+	margin: 0 auto;
+}
+
+.shop-img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 150px;
+}
+
+/*company-info*/
+
+.contants {
+	width: 100%;
+}
+
+.company-info {
+	display: flex;
+}
+
+.map-content {
+	max-width: 700px;
+}
+
+.contaсt-card {
+    padding: 70px 103px 74px 106px;
+    height: 400px;
+    width: 100%;
+    background: url(../img/{5bf05bfa-beba-cd8d-5eb1-05d6fef53260}.jpeg) no-repeat center top/cover;
+    color: #e3e5e8;
+}
+
+.contaсt-card a:hover {
+	color: #f5a641;
+}
+
+.contaсt-card-address-wrap p {
+	color: #fff;
+}
+
+.contact-card-info p {
+	color: #e3e5e8;
+}
+
+.contaсt-card-content {
+	margin-top: 45px;
+}
+
+.contaсt-card-social__title {
+	font-size: 21px;
+	color: #fff;
+}
+
+.contaсt-card-comunication {
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.contaсt-card-comunication i {
+	margin-right: 5px;
+}
+
+.contact-card-info {
+	max-width: 184px;
+}
+
+.contaсt-card-phone {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+}
+
+.contaсt-card-comunication a {
+	color: #fff;
+	max-width: 100%;
+}
+
+.contaсt-card-social__link {
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16.67px;
+	text-align: center;
+	max-width: 100%;
+}
+
+.contaсt-card-social__link {
+	color: #ffffff;
+	font-size: 25px;	
+	max-width: 100%;
+}
+
+.contaсt-card-social__icons li:not(:last-child) {
+	margin-right: 20px;
+}
+
+.contact-card-info {
+	font-size: 12px;
+}
+
+.contact-card-info p:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.contaсt-card-comunication div:not(:last-child) {
+	margin-bottom: 27px;
+}
+
+.contaсt-card-phone a:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.contaсt-card-comunication {
+	margin-right: 20px;
+}
+
+/*--- connection ---*/
+
+.connection {
+	padding: 100px 0;
+}
+
+.connection-content {
+	text-align: center;
+}
+
+.form {
+	justify-content: center;
+}
+
+.form-text {
+	max-width: 280px;
+	margin: 12px auto 15px;
+}
+
+.form__item {
+	padding: 20px;
+	max-width: 500px;
+	width: 400px;
+	font-size: 20px;
+	border-radius: 50px;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #64aff3;
+}
+
+.form__item:not(:last-child) {
+	margin-bottom: 13px;
+}
+
+.form__button {
+	margin-top: 19px;
+	max-width: 250px;
+	border-radius: 50px;
+	font-size: 15px;
+	font-weight: 700;
+	width: 100%;
+	height: 47px;
+	background: #64aff3;	
+}
+
+
+/*--- footer ---*/
+
+.footer {
+	position: relative;
+    background: url(../img/footer-2.jpg) no-repeat center center/cover;
+    padding: 30px 0;
+}
+
+.copyright {
+	margin: 0 auto;
+}
+
+.footer-img {
+    position: absolute;
+    width: 100px;
+    right: 22%;
+    bottom: 0%;
+}
+
+/* Media Queries */
+
+@media (max-width: 1300px) {
+
+	.contaсt-card {
+		padding: 40px 20px;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.map {
+		width: 75%;
+	}
+
+	.map-content {
+		max-width: 100%;
+		width: 100%;
+	}
+
+
+}
+
+@media (max-width: 1280px) {
+	.container {
+	    width: 920px;
+	}
+
+
+
+}
+
+@media (max-width: 991.98px) {
+	.container {
+	    width: 720px;
+	 }
+
+	.contact-card {
+		max-height: 100%;
+	}
+
+	.map {
+		width: 100%;
+	}
+
+	.company-info{
+		flex-direction: column;
+	}
+
+	.contaсt-card-content {
+		justify-content: center;
+	}
+
+	.contact-card-info {
+		max-width: 50%;
+		font-size: 15px;
+	}
+
+}
+
+@media (max-width: 767.98px) {
+	.container {
+	   width: 576px;
+	}
+
+	.shop .container {
+	  flex-direction: column;
+	}
+
+	.nav {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.shop-img {
+		display: none;
+	}
+
+	.map-content {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.footer-img {
+		display: none;
+	}
+
+
+}
+
+@media (max-width: 575.98px) { 
+	.container {
+       width: 90%;
+    }
+
+    .contaсt-card {
+    	padding: 40px 50px;
+    }
+
+    .contaсt-card-content {
+    	flex-direction: column;
+    	text-align: center;
+    }
+
+    .contact-card-info {
+    	max-width: 100%;
+    	width: 100%;
+    }
+
+    .contaсt-card-phone , .contaсt-card-address , .contaсt-card-email{
+    	margin: 0 auto;
+    }
+
+    .contaсt-card-comunication {
+    	margin-bottom: 10px;
+    }
+
+    .form__item {
+    	width: 100%;
+    	max-width: 100%;	
+    }
+
+    .form__button {
+    	width: 100%;
+    	max-width: 100%;
+    }
+
+    h1 {
+	font-size: 30px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 10px;
+	}
+
+	.header {
+		padding-bottom: 80px;
+	}
+
+	.offer-title {
+	    font-size: 35px;
+	    margin: 0 auto;
+	    max-width: 301px;
+	}
+
+	.logo {
+		width: 100px;
+	}
+
+	.shop-sleigh {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.header-info , .header-info a {
+		font-size: 11px;
+	}
+
+	.nav a li{
+		font-size: 12px;
+	}
+
+	
+}
+
+@media (max-width: 480px) { 
+	
+	
+}
+
+
+@media (max-width: 370px) { 
+		
+	
+}
