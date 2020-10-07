@@ -321,6 +321,7 @@ input:active , input:focus , button:active , button:focus {
 
 .connection {
 	padding: 100px 0;
+	background: #fff;
 }
 
 .connection-content {
