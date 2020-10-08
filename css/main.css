@@ -262,10 +262,18 @@ input:active , input:focus , button:active , button:focus {
 	display: flex;
 }
 
+.none {
+	display: none;
+}
+
 .block {
   display: none;
   max-width: 1000px;
   width: 100%;
+}
+
+.bmv {
+	display: block;
 }
 
 .active {
@@ -543,6 +551,17 @@ input:active , input:focus , button:active , button:focus {
 		display: none;
 	}
 
+	.shop .container {
+		flex-direction: column;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
 	.map-content {
 		width: 100%;
 		max-width: 100%;
@@ -627,7 +646,7 @@ input:active , input:focus , button:active , button:focus {
 	}
 
 	.nav li{
-		font-size: 12px;
+		font-size: 10px;
 	}
 
 	
