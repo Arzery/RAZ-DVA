@@ -345,7 +345,7 @@ input:active , input:focus , button:active , button:focus {
 	max-width: 100%;
 }
 
-.contaсt-card-comunication a {
+.contaсt-card-comunication a , .contaсt-card-comunication p {
 	color: #fff;
 	max-width: 100%;
 	font-weight: 700;
@@ -583,6 +583,10 @@ input:active , input:focus , button:active , button:focus {
        width: 90%;
     }
 
+    .container-fluid {
+		width: 100%;
+	}
+
     .contaсt-card {
     	padding: 40px 50px;
     }
@@ -658,11 +662,15 @@ input:active , input:focus , button:active , button:focus {
 
 @media (max-width: 480px) { 
 	
-	
+	.container-fluid {
+		width: 100%;
+	}
 }
 
 
 @media (max-width: 370px) { 
 		
-	
+	.container-fluid {
+		width: 100%;
+	}
 }
