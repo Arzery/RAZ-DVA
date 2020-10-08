@@ -146,14 +146,6 @@ input:active , input:focus , button:active , button:focus {
 	text-align: center;
 }
 
-.btn:hover {
-	box-shadow: 0 1px 10px rgba(0,0,0,0.8);
-}
-
-.btn:active {
-	box-shadow: 0 0 3px rgba(0,0,0,0.5);
-}
-
 /*--- SNOW ---*/
 
 #snow {
@@ -239,6 +231,7 @@ input:active , input:focus , button:active , button:focus {
 .nav {
 	color: #fff;
 	width: 100px;
+	margin-right: 18px;
 }
 
 .nav__item {
@@ -246,10 +239,17 @@ input:active , input:focus , button:active , button:focus {
 	font-weight: 900;
 	font-size: 17px;
 	padding: 10px 0;
+	cursor: pointer;
 }
 
 .nav__item:hover {
 	color: #f5a641;	
+}
+
+.shop-wrap{
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
 }
 
 .shop {
@@ -262,8 +262,14 @@ input:active , input:focus , button:active , button:focus {
 	display: flex;
 }
 
-.shop-sleigh {
-	margin: 0 auto;
+.block {
+  display: none;
+  max-width: 600px;
+  width: 100%;
+}
+
+.active {
+	display: block;
 }
 
 .shop-img {
@@ -559,20 +565,6 @@ input:active , input:focus , button:active , button:focus {
 	   width: 576px;
 	}
 
-	.shop .container {
-	  
-	}
-
-	.nav {
-		width: 100%;	
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.shop .container {
-		flex-direction: column;
-	}
-
 	.shop-img {
 		display: none;
 	}
@@ -652,7 +644,7 @@ input:active , input:focus , button:active , button:focus {
 		width: 100px;
 	}
 
-	.shop-sleigh {
+	.shop-content img {
 		max-width: 100%;
 		width: 100%;
 	}
@@ -661,7 +653,7 @@ input:active , input:focus , button:active , button:focus {
 		font-size: 11px;
 	}
 
-	.nav a li{
+	.nav li{
 		font-size: 12px;
 	}
 
