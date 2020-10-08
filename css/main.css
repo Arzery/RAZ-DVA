@@ -551,6 +551,10 @@ input:active , input:focus , button:active , button:focus {
 		width: 100%;
 	}
 
+	.shop {
+		padding: 0;
+	}
+	
 	.shop-img {
 		display: none;
 	}
