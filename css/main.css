@@ -8,7 +8,7 @@
        url('../fonts/Luntik-Bold.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/Luntik-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/Luntik-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
-font-weight: 900;
+font-weight: 400;
 }
 
 /*----- MuseoSansCyrl -----*/
@@ -199,7 +199,6 @@ input:active , input:focus , button:active , button:focus {
 }
 
 .offer {
-    font-family: 'Luntik-Bold';
     margin: 0 auto;
     border-radius: 50%;
     padding: 100px 57px;
@@ -226,7 +225,9 @@ input:active , input:focus , button:active , button:focus {
 }
 
 .offer-title {
-	font-size: 35px;
+	font-family: 'Luntik-Bold';
+    font-weight: 900;
+	font-size: 40px;
 	letter-spacing: 0.14em;
 	color: #f5a641;
 }
