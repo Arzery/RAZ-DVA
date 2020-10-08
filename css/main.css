@@ -227,7 +227,7 @@ input:active , input:focus , button:active , button:focus {
 .offer-title {
 	font-family: 'Luntik-Bold';
     font-weight: 900;
-	font-size: 40px;
+	font-size: 35px;
 	letter-spacing: 0.14em;
 	color: #f5a641;
 }
@@ -291,7 +291,7 @@ input:active , input:focus , button:active , button:focus {
     padding: 70px 103px 74px 106px;
     height: 400px;
     width: 100%;
-    background: url(../img/{5bf05bfa-beba-cd8d-5eb1-05d6fef53260}.jpeg) no-repeat center top/cover;
+    background: url(../img/{5bf05bfa-beba-cd8d-5eb1-05d6fef53260}.jpeg) no-repeat right top/cover;
     color: #e3e5e8;
 }
 
@@ -342,6 +342,7 @@ input:active , input:focus , button:active , button:focus {
 .contaсt-card-comunication a {
 	color: #fff;
 	max-width: 100%;
+	font-weight: 700;
 }
 
 .contaсt-card-social__link {
@@ -358,6 +359,11 @@ input:active , input:focus , button:active , button:focus {
 	color: #ffffff;
 	font-size: 25px;	
 	max-width: 100%;
+}
+
+.contact-card-info__text {
+	font-size: 14px;
+	font-weight: 700;
 }
 
 .contaсt-card-social__icons li:not(:last-child) {
