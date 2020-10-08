@@ -547,6 +547,10 @@ input:active , input:focus , button:active , button:focus {
 	   width: 576px;
 	}
 
+	.container-fluid {
+		width: 100%;
+	}
+
 	.shop-img {
 		display: none;
 	}
@@ -557,7 +561,7 @@ input:active , input:focus , button:active , button:focus {
 
 	.nav {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		width: 100%;
 		margin-bottom: 20px;
 	}
