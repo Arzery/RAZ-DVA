@@ -480,6 +480,7 @@ input:active , input:focus , button:active , button:focus {
 
 .copyright {
 	margin: 0 auto;
+	font-weight: 700;
 }
 
 .footer-img {
